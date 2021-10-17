@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainrelative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.9"
+    android:background="@drawable/bg_sachet"
+    tools:context=".MainActivity"
+    android:layout_gravity="center_horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Sachet"
+            android:textColor="#A52A2A"
+            android:layout_marginBottom="5dp"
+            android:textSize="35dp"
+            android:fontFamily="cursive"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Risk Mitigation Application"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/signin_mainpage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:background="@drawable/round_edge"
+            android:text="Sign In"
+            android:textAllCaps="false" />
+
+        <LinearLayout
+            android:id="@+id/first_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/crime"
+                android:layout_width="124dp"
+                android:layout_height="123dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_edge"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/crime" />
+
+            <ImageButton
+                android:id="@+id/knowyourlocality"
+                android:layout_width="124dp"
+                android:layout_height="123dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_edge"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/locality3" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/second_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/beaware"
+                android:layout_width="124dp"
+                android:layout_height="123dp"
+                android:scaleType="fitCenter"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/crime_iocn8" />
+
+
+            <ImageButton
+                android:id="@+id/map"
+                android:layout_width="124dp"
+                android:background="@drawable/round_edge"
+                android:layout_height="123dp"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="5dp"
+                app:srcCompat="@drawable/mapped" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/third_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/emergency"
+                android:layout_width="124dp"
+                android:layout_height="123dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/round_edge"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/emer" />
+
+            <ImageButton
+                android:id="@+id/help"
+                android:layout_width="124dp"
+                android:layout_height="123dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_edge"
+                app:srcCompat="@drawable/help2" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fourth_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/district"
+                android:layout_width="124dp"
+                android:layout_height="123dp"
+                android:scaleType="fitCenter"
+                android:padding="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_edge"
+                app:srcCompat="@drawable/district" />
+
+            <ImageButton
+                android:id="@+id/feedback"
+                android:layout_width="124dp"
+                android:layout_height="123dp"
+                android:scaleType="fitCenter"
+                android:padding="15dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_edge"
+                app:srcCompat="@drawable/feedback" />
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signup_forfree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/round_edge"
+            android:text="Sign Up For Free"
+            android:textAllCaps="false" />
+
+
+
+    </LinearLayout>
+</ScrollView>

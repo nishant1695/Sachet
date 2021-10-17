@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0FFFF"
+    android:orientation="vertical"
+    tools:context=".ListDistrictDetails">
+
+    <include
+        android:id="@+id/toolbar_district_details"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_zname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/zname_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="District "
+            android:layout_margin="5dp"
+            android:textColor="#800000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/edit_zname_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="District name"
+            android:textSize="20dp"
+            android:textColor="#008080"
+            android:layout_margin="5dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hq_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="HeadQuaters "
+            android:layout_margin="5dp"
+            android:textColor="#800000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/edit_hq_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="#008080"
+            android:layout_marginLeft="10dp"
+            android:hint="HeadQuaters name"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_total_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/total_area_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Total Area (in kms) "
+            android:textColor="#800000"
+            android:layout_margin="5dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/edit_total_area_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="total_area"
+            android:layout_margin="5dp"
+            android:textColor="#008080"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_coordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/coordinates_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_margin="5dp"
+            android:text="Co-ordinates : "
+            android:textColor="#800000"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/latitude_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:hint="latitude"
+            android:layout_margin="5dp"
+            android:textColor="#008080"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/longitude_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="longitude"
+            android:layout_margin="5dp"
+            android:textColor="#008080"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_no_of_ps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/no_of_ps_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_margin="5dp"
+            android:text="No. of Police Stations : "
+            android:textColor="#800000"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/edit_no_of_ps_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:textColor="#008080"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/prime_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="Prime Time of Crime : "
+            android:textColor="#800000"
+            android:layout_margin="5dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/edit_prime_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="#008080"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Areas"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <ListView
+        android:id="@+id/list_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  >
+
+    </ListView>
+
+
+</LinearLayout>

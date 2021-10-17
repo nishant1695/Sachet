@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sachet.android.sachet">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/eaglebald"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EmergencyContacts">
+            android:label="Emergency Contacts"
+        </activity>
+        <activity android:name=".Crimes">
+            android:label="Crimes"
+        </activity>
+        <activity android:name=".Help">
+            android:label="Help"
+        </activity>
+        <activity android:name=".KnowYourLocality">
+            android:label="Know Your Activity"
+        </activity>
+        <activity android:name=".Map">
+            android:label="Map"
+        </activity>
+        <activity android:name=".ListCrimeDetails">
+            android:label="List Of Crimes"
+        </activity>
+        <activity android:name=".DelhiDistricts">
+            android:label="Delhi Districts"
+        </activity>
+        <activity android:name=".Beaware">
+            android:label="Beware"
+        </activity>
+        <activity android:name=".KnowYourLocality">
+            android:label="Know your locality"
+        </activity>
+        <activity android:name=".Feedback">
+            android:label="FeedBack"
+        </activity>
+        <activity android:name=".ListDistrictDetails">
+            android:label="ListDistrictDetails"
+        </activity>
+        <activity android:name=".Help_Area_NotFound" />
+        <activity android:name=".Contact_Us" />
+        <activity android:name=".Help_Crime_NotFound" />
+        <activity android:name=".RegisterYourself" />
+        <activity android:name=".Login" />
+        <activity android:name=".Forgot_Password" />
+        <activity android:name=".User" />
+        <activity android:name=".ListAreaDetails"></activity>
+    </application>
+
+</manifest>

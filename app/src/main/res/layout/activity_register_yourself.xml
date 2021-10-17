@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8DC"
+    android:orientation="vertical"
+    tools:context=".RegisterYourself">
+
+    <include
+        android:id="@+id/toolbar_register_yourself"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.8"
+        android:scaleType="centerCrop"
+        android:src="@drawable/register" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="cursive"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Register Yourself For Free"
+            android:textColor="#F08080"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/register_round_edge"
+            android:hint="*Enter Name"
+            android:padding="8dp"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/register_round_edge"
+            android:hint="*Enter Email ID"
+            android:padding="8dp"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/register_round_edge"
+            android:hint="*Enter Area"
+            android:padding="8dp"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/register_round_edge"
+            android:hint="*Enter Area Pincode "
+            android:inputType="number"
+            android:padding="8dp"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/register_round_edge"
+            android:hint="Enter Phone Number "
+            android:inputType="number"
+            android:padding="8dp"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sign_up"
+            android:layout_alignTop="@+id/phone"
+            android:layout_margin="5dp"
+            android:background="@drawable/register_round_edge"
+            android:hint="*Password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textSize="20dp" />
+
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@null"
+            android:padding="8dp"
+            android:text="SIGN UP"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</RelativeLayout>

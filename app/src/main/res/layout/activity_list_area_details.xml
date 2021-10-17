@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="	#F5F5DC"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListAreaDetails">
+
+    <include
+        android:id="@+id/toolbar_area_details"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_aname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/aname_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Area "
+            android:layout_margin="5dp"
+            android:textColor="#800000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/edit_aname_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Area name"
+            android:textSize="20dp"
+            android:textColor="#008080"
+            android:layout_margin="5dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pincode_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Pincode "
+            android:layout_margin="5dp"
+            android:textColor="#800000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/edit_pincode_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="#008080"
+            android:layout_marginLeft="10dp"
+            android:hint="Pincode "
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_total_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/total_listarea_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Total Area (in kms) "
+            android:textColor="#800000"
+            android:layout_margin="5dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/edit_total_listarea_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="total_area"
+            android:layout_margin="5dp"
+            android:textColor="#008080"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_area_coordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/area_coordinates_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_margin="5dp"
+            android:text="Co-ordinates : "
+            android:textColor="#800000"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/area_latitude_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:hint="latitude"
+            android:layout_margin="5dp"
+            android:textColor="#008080"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/area_longitude_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="longitude"
+            android:layout_margin="5dp"
+            android:textColor="#008080"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/no_ps_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_margin="5dp"
+            android:text="Police Station : "
+            android:textColor="#800000"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/edit_ps_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:textColor="#008080"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_ps_adds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ps_adds_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_margin="5dp"
+            android:text="Address : "
+            android:textColor="#800000"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/edit_ps_adds_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="address"
+            android:layout_margin="5dp"
+            android:textColor="#008080"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/frequent_crime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="Frequent Crime : "
+            android:textColor="#800000"
+            android:layout_margin="5dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/edit_frequent_crime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="#008080"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/ps_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_edge"
+        android:text="Call"/>
+
+
+
+</LinearLayout>

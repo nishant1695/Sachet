@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAEBD7">
+
+    <include
+        android:id="@+id/toolbar_feedback"
+        layout="@layout/toolbar" />
+
+
+
+    <TextView
+        android:id="@+id/fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FeedBack"
+        android:textSize="32dp"
+        android:gravity="center"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:id="@+id/knowledge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Knowledge"
+            android:textSize="20dp"/>
+
+        <RatingBar
+            android:id="@+id/knowledge_rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/innovation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Innovation"
+            android:textSize="20dp"/>
+
+        <RatingBar
+            android:id="@+id/innovation_rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/interaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interaction"
+            android:textSize="20dp"/>
+
+        <RatingBar
+            android:id="@+id/interaction_rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/communication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Communication"
+            android:textSize="25dp"/>
+
+        <RatingBar
+            android:id="@+id/communication_rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/overall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OverAll Rating"
+            android:textSize="20dp"/>
+
+        <RatingBar
+            android:id="@+id/overall_ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fb_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send us a feedback"/>
+
+    <TextView
+        android:id="@+id/fb_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Summary"
+        android:textColor="#000"/>
+
+</LinearLayout>
+

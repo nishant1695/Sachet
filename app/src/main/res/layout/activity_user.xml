@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.9"
+    android:background="@drawable/bg_sachet"
+    tools:context=".User"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Sachet"
+            android:textColor="#A52A2A"
+            android:layout_marginBottom="5dp"
+            android:textSize="35dp"
+            android:fontFamily="cursive"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/hello_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="Username"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"
+            android:paddingLeft="15dp"
+            android:fontFamily="cursive"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/user_crime_icon"
+                android:layout_width="124dp"
+                android:layout_height="123dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_edge"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/crime" />
+
+            <ImageButton
+                android:id="@+id/user_locality_icon"
+                android:layout_width="124dp"
+                android:layout_height="123dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_edge"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/locality3" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/user_beaware_icon"
+                android:layout_width="124dp"
+                android:layout_height="123dp"
+                android:scaleType="fitCenter"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/crime_iocn8" />
+
+
+            <ImageButton
+                android:id="@+id/user_map_icon"
+                android:layout_width="124dp"
+                android:background="@drawable/round_edge"
+                android:layout_height="123dp"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="5dp"
+                app:srcCompat="@drawable/mapped" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/user_emergency_icon"
+                android:layout_width="124dp"
+                android:layout_height="123dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/round_edge"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/emer" />
+
+            <ImageButton
+                android:id="@+id/user_help_icon"
+                android:layout_width="124dp"
+                android:layout_height="123dp"
+                android:scaleType="centerInside"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_edge"
+                app:srcCompat="@drawable/help2" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/user_district_icon"
+                android:layout_width="124dp"
+                android:layout_height="123dp"
+                android:scaleType="fitCenter"
+                android:padding="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_edge"
+                app:srcCompat="@drawable/district" />
+
+            <ImageButton
+                android:id="@+id/user_feedback_icon"
+                android:layout_width="124dp"
+                android:layout_height="123dp"
+                android:scaleType="fitCenter"
+                android:padding="15dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_edge"
+                app:srcCompat="@drawable/feedback" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
